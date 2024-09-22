@@ -27,8 +27,6 @@ This project demonstrates the implementation of a Library Management System usin
 
 ```sql
 CREATE DATABASE library_db;
-
-DROP TABLE IF EXISTS branch;
 CREATE TABLE branch
 (
             branch_id VARCHAR(10) PRIMARY KEY,
@@ -39,7 +37,6 @@ CREATE TABLE branch
 
 
 -- Create table "Employee"
-DROP TABLE IF EXISTS employees;
 CREATE TABLE employees
 (
             emp_id VARCHAR(10) PRIMARY KEY,
@@ -52,7 +49,6 @@ CREATE TABLE employees
 
 
 -- Create table "Members"
-DROP TABLE IF EXISTS members;
 CREATE TABLE members
 (
             member_id VARCHAR(10) PRIMARY KEY,
@@ -64,7 +60,6 @@ CREATE TABLE members
 
 
 -- Create table "Books"
-DROP TABLE IF EXISTS books;
 CREATE TABLE books
 (
             isbn VARCHAR(50) PRIMARY KEY,
@@ -79,7 +74,6 @@ CREATE TABLE books
 
 
 -- Create table "IssueStatus"
-DROP TABLE IF EXISTS issued_status;
 CREATE TABLE issued_status
 (
             issued_id VARCHAR(10) PRIMARY KEY,
@@ -96,7 +90,6 @@ CREATE TABLE issued_status
 
 
 -- Create table "ReturnStatus"
-DROP TABLE IF EXISTS return_status;
 CREATE TABLE return_status
 (
             return_id VARCHAR(10) PRIMARY KEY,
