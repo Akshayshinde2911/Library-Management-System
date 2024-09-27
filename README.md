@@ -279,8 +279,6 @@ DECLARE
     v_book_name VARCHAR(80);
     
 BEGIN
-    -- all your logic and code
-    -- inserting into returns based on users input
     INSERT INTO return_status(return_id, issued_id, return_date, book_quality)
     VALUES
     (p_return_id, p_issued_id, CURRENT_DATE, p_book_quality);
