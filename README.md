@@ -394,6 +394,7 @@ JOIN
 branch as b
 ON e.branch_id = b.branch_id
 GROUP BY 1, 2
+order by  COUNT(ist.issued_id) desc
 ```
 
 **Task 18: Stored Procedure**
